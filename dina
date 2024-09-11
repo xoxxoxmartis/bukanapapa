@@ -1,0 +1,25 @@
+import time
+
+# Define a function to represent the longing
+def missing_dina():
+    # Initialize a counter to represent the days apart
+    days_apart = 0
+
+    # Loop indefinitely to represent the longing
+    while True:
+        # Increment the counter
+        days_apart += 1
+
+        # Print a message to express the longing
+        print(f"Day {days_apart}: I miss you, Dina. You're always busy, but my heart still hopes to hear from you.")
+
+        # Pause for a moment to represent the passing of time
+        time.sleep(1)
+
+        # Simulate the fear of reaching out to her
+        if days_apart % 5 == 0:
+            print("But I'm afraid to disturb you, Dina. You work so hard, and I don't want to add to your stress.")
+            time.sleep(2)
+
+# Call the function
+missing_dina()
